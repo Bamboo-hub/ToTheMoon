@@ -130,7 +130,6 @@ class GuaGame {
                 g.images[name] = img
                 // 所有图片都成功载入之后, 调用 run
                 loads.push(1)
-                log('load images', loads.length, names.length)
                 if (loads.length == names.length) {
                     log('图片加载完成')
                     g.__start()
